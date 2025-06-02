@@ -115,32 +115,32 @@ class _HomeScreenState extends State<HomeScreen> {
                               onTap:
                                   //  _getCurrentLocation,
                                   () {
-                                Get.find<LocationController>()
-                                    .fetchUserLocation();
+                                // Get.find<LocationController>()
+                                //     .fetchUserLocation();
                               },
                               child: const Icon(Icons.location_on),
                             ),
                             const SizedBox(width: 8),
-                            GetBuilder<LocationController>(
-                              builder: (controller) {
-                                return Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    const Text('Delivery to'),
-                                    Text(controller
-                                        .userLocation), // shows address or pincode
-                                  ],
-                                );
-                              },
+                            // GetBuilder<LocationController>(
+                            //   builder: (controller) {
+                            //     return Column(
+                            //       crossAxisAlignment: CrossAxisAlignment.start,
+                            //       children: [
+                            //         const Text('Delivery to'),
+                            //         Text(controller
+                            //             .userLocation), // shows address or pincode
+                            //       ],
+                            //     );
+                            //   },
+                            // )
+                            const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Delivery to'),
+                                Text(
+                                    '1122002'), // Replace with actual location or pincode later
+                              ],
                             ),
-                            // const Column(
-                            //   crossAxisAlignment: CrossAxisAlignment.start,
-                            //   children: [
-                            //     Text('Delivery to'),
-                            //     Text(
-                            //         '1122002'), // Replace with actual location or pincode later
-                            //   ],
-                            // ),
                           ],
                         ),
 
