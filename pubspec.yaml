@@ -37,7 +37,7 @@ dependencies:
   get: ^4.6.6
   carousel_slider: ^5.0.0
   google_maps_flutter: ^2.5.0
-  # geocoding: ^4.0.0
+  geocoding: ^4.0.0
   location: ^5.0.3
   gap:
   google_fonts: ^6.2.1
