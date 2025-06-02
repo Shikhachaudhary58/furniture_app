@@ -1,5 +1,6 @@
 import 'package:assignment/controller/cart_controller.dart';
 import 'package:assignment/controller/favourite_controller.dart';
+import 'package:assignment/controller/location_controller.dart';
 // import 'package:assignment/controller/location_controller.dart';
 import 'package:assignment/view/home/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,7 @@ import 'package:get/get.dart';
 void main() {
   Get.put(FavoritesController());
   Get.put(CartController());
-  // Get.put(LocationController());
+  Get.put(LocationController());
 
   runApp(const MyApp());
 }

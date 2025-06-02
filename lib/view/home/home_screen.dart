@@ -111,16 +111,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Row(
                           children: [
-                            // GestureDetector(
-                            //   onTap:
-                            //       //  _getCurrentLocation,
-                            //       () {
-                            //     // Get.find<LocationController>()
-                            //     //     .fetchUserLocation();
-                            //   },
-                            //   child: const Icon(Icons.location_on),
-                            // ),
-                            // const SizedBox(width: 8),
+                            GestureDetector(
+                              onTap:
+                                  //  _getCurrentLocation,
+                                  () {
+                                Get.find<LocationController>()
+                                    .fetchUserLocation();
+                              },
+                              child: const Icon(Icons.location_on),
+                            ),
+                            const SizedBox(width: 8),
                             GetBuilder<LocationController>(
                               builder: (controller) {
                                 return Column(
